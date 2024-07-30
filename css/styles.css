@@ -1,0 +1,138 @@
+  :root {
+  --main-color: #021635; /*advantages, review, footer background color*/
+  --main-text-color: #FFFFFF; /*main text color, header hover*/
+  --header-background-color: #012D63;
+  --header-nav-color: #C7C7C7;
+  --hero-button-color: #8E32C6;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Playfair Display', serif;
+  --tertiary-font: 'PT Serif', serif;
+  }
+
+  .container {
+  width: 1440px;
+  height: 2875px;
+  margin-right: 215px; 
+  margin-left: 215px;
+  }
+
+  .header {
+  background-color: var(--header-background-color);
+  height: 90px;
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  }
+
+  .nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  }
+  
+  .nav-list-left,
+  .nav-list-right {
+  display: flex;
+  align-items: center;
+  }
+
+  .header .nav-list-right {
+  margin-right: 165px;
+  margin-left: auto;
+  }
+
+  .nav-img {
+  padding-left: 168px;
+  padding-right: 152px;
+  display: flex;
+  }
+
+  .nav-item-left {
+  padding-right: 29px;
+  }
+
+  .nav-item-right {
+  padding-right: 10px;
+  }
+
+  .header li a {
+  text-decoration: none;
+  color: var(--header-nav-color);
+  font-family: var(--main-font);
+  font-weight: 300;
+  transition: color 0.3s;
+  }
+
+  .header li a:hover {
+  color: var(--main-text-color);
+  font-weight: 400;
+  }
+
+
+
+
+  .hero {
+  background-image: url("../images/hero/hero_1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 858px;
+  width: 1440px;
+  }
+
+  .hero img {
+  margin: 94px 0 0 171px;
+  }
+
+  .logo {
+  font-family: var(--tertiary-font);
+  font-weight: 400;
+  color: var(--main-text-color);
+  font-size: 48px;
+  margin-left: 196px;
+  }
+
+  .tagline {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  color: var(--main-text-color);
+  font-size: 144px;
+  margin: 10px 0 0 157px;
+  }
+
+  .subtagline {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  color: var(--main-text-color);
+  font-size: 72px;
+  margin-left: 165px;
+  }
+
+  .hero-description {
+  font-family: var(--main-font);
+  font-weight: 400;
+  color: var(--main-text-color);
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 12px 0 0 165px;
+  }
+
+  .hero-button {
+  color: var(--main-text-color);
+  background-color: var(--hero-button-color); 
+  border-radius: 10px;
+  width: 254px;
+  height: 67px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  margin: 41px 0 0 165px;
+  }
+
+  .hero-button:hover {
+  background-color: #62789c;
+  }
+
+
+  

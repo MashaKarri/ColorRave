@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shorticon icon" href="./images/header-nike/header-nike_1.png" />
+    <title>ColorRave</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav-list-left">
+            <li class="nav-img">
+              <img
+                src="./images/header-nike/header-nike_1.png"
+                alt="nike_logo"
+              />
+            </li>
+            <li class="nav-item-left"><a href="#">Main page</a></li>
+            <li class="nav-item-left"><a href="#">Benefits</a></li>
+            <li class="nav-item-left"><a href="#">Advantages</a></li>
+            <li class="nav-item-left"><a href="#">Reviews</a></li>
+            <li class="nav-item-left"><a href="#">Contacts</a></li>
+            <li class="nav-item-left"><a href="#">Order</a></li>
+          </ul>
+          <ul class="nav-list-right">
+            <li class="nav-item-right"><a href="#">Ua</a></li>
+            <li class="nav-item-right"><a href="#">Eng</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <img src="./images/hero-nike/hero-nike_1.png" alt="nike-logo" />
+          <h3 class="logo">C&R</h3>
+          <h1 class="tagline">ColoRawe</h1>
+          <h2 class="subtagline">Your dream Nike</h2>
+          <p class="hero-description">
+            On this site you can find custom Nike sneakers of your dreams.
+            <br />
+            The original company caт`t create such beautiful <br />
+            sneakers as we do. <br />
+            Good luck finding your way in the world of custom sneakers.
+          </p>
+          <button class="hero-button" type="button">Buy my Nike</button>
+        </section>
+        <section class="advantages">
+          <article>
+            <h3>Premium Quality</h3>
+            <img
+              src="./images/advantages/advantages_1.jpg"
+              alt="Premium Quality"
+            />
+          </article>
+          <article>
+            <img
+              src="./images/advantages/advantages_2.jpg"
+              alt="Indelible Paint"
+            />
+            <h3>Indelible Paint</h3>
+          </article>
+          <article>
+            <h3>Fast Shipping</h3>
+            <img
+              src="./images/advantages/advantages_3.jpg"
+              alt="Fast Shipping"
+            />
+          </article>
+        </section>
+        <section class="reviews">
+          <h2>Reviews</h2>
+          <div class="review-cards">
+            <div class="review-card">
+              <p>
+                Sneakers are very <br />
+                comfortable and well <br />
+                painted, nothing has <br />
+                worn off in a year.
+              </p>
+              <p class="date">25.11</p>
+              <img
+                src="./images/buyer-avatars/buyer-avatars_1.jpg"
+                alt="John Taylor"
+              />
+              <p class="name">John Taylor</p>
+              <p class="description">With us from 2018</p>
+            </div>
+            <div class="review-card">
+              <p>
+                I'm very happy with <br />
+                this color scheme. <br />
+                They match all my <br />
+                clothes.
+              </p>
+              <p class="date">05.01</p>
+              <img
+                src="./images/buyer-avatars/buyer-avatars_2.jpg"
+                alt="Elizabeth Garcia"
+              />
+              <p class="name">Elizabeth Garcia</p>
+              <p class="description">With us from 2020</p>
+            </div>
+            <div class="review-card">
+              <p>
+                Just right if you need <br />
+                to go to a party. <br />
+                I use them actively, <br />
+                the paint is super.
+              </p>
+              <p class="date">18.06</p>
+              <img
+                src="./images/buyer-avatars/buyer-avatars_3.jpg"
+                alt="Tom Maquare"
+              />
+              <p class="name">Tom Maquare</p>
+              <p class="description">With us from 2019</p>
+            </div>
+          </div>
+        </section>
+        <section class="order">
+          <h2>Order</h2>
+          <form name="signup_form" autocomplete="on" novalidate>
+            <label for="email"></label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Write your email"
+              required
+            /><br />
+
+            <label for="country"></label><br />
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Your Country"
+              required
+            /><br />
+
+            <label for="city"></label><br />
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Your City"
+              required
+            /><br />
+
+            <label for="adress"></label><br />
+            <input
+              type="text"
+              id="adress"
+              name="adress"
+              placeholder="Your Adress"
+              required
+            /><br />
+            <button type="submit">Order my Nike</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <ul class="left-information">
+          <li class="left-text"><p>Have a question?</p></li>
+          <li class="left-text"><p>Have a proposal for cooperation?</p></li>
+          <li class="left-text"><p>Advertising questions?</p></li>
+          <li class="left-text"><p>2022 ColoRawe @All rights reserved</p></li>
+          <li class="left-text"><p>United States</p></li>
+        </ul>
+        <ul class="right-information">
+          <li class="right-link"><a href="#">ColoRawe_support@gmail.com</a></li>
+          <li class="right-link">
+            <a href="#">ColoRawe_Cooperation@gmail.com</a>
+          </li>
+          <li class="right-link">
+            <a href="#">ColoRawe_Advertising@gmail.com</a>
+          </li>
+          <li class="right-image">
+            <img src="./images/footer-nike/footer-nike_1.png" alt="nike-logo" />
+          </li>
+          <li class="right-text"><p>С&R</p></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
