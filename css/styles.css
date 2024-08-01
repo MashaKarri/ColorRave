@@ -71,8 +71,6 @@
   }
 
 
-
-
   .hero {
   background-image: url("../images/hero/hero_1.jpg");
   background-repeat: no-repeat;
@@ -132,7 +130,60 @@
 
   .hero-button:hover {
   background-color: #62789c;
+  transition: 0.3s;
   }
 
 
+  .advantages {
+  background: linear-gradient(135deg, #812FB9 3%, #6B2BA1 10%, #4D2582 15%, #35206A 22%, #021635 35%, #02304E 65%, #01516F 80%, #01AECA 100%);
+  height: 606px;
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff; 
+  }
   
+  .advantages-container {
+  padding: 25px 50px;
+  border: 5px solid #8E32C6;
+  height: 396px;
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  column-gap: 145px;
+  justify-content: center;
+  }
+  
+  .advantages-item {
+  text-align: center;
+  color: var(--main-text-color);
+  }
+  
+  .advantages-item h3 {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.4;
+  }
+
+  
+  .reviews {
+  background: linear-gradient(135deg, #021635 35%, #02304E 65%, #01516F 80%, #01AECA 100%);
+  height: 520px;
+  width: 1440px;
+  }
+
+  .order {
+  background-image: url("../images/order/order_1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 509px;
+  width: 1440px;
+  }
+
+  .footer {
+  background-color: var(--main-color);
+  height: 316px;
+  width: 1440px;
+  }
