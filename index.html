@@ -96,7 +96,7 @@
           <h2>Reviews</h2>
           <div class="review-cards">
             <div class="review-card">
-              <p>
+              <p class="review-text">
                 Sneakers are very <br />
                 comfortable and well <br />
                 painted, nothing has <br />
@@ -111,7 +111,7 @@
               <p class="description">With us from 2018</p>
             </div>
             <div class="review-card">
-              <p>
+              <p class="review-text">
                 I'm very happy with <br />
                 this color scheme. <br />
                 They match all my <br />
@@ -126,7 +126,7 @@
               <p class="description">With us from 2020</p>
             </div>
             <div class="review-card">
-              <p>
+              <p class="review-text">
                 Just right if you need <br />
                 to go to a party. <br />
                 I use them actively, <br />
@@ -144,12 +144,14 @@
         </section>
         <section class="order">
           <h2>Order</h2>
+          <div class="order-container">
           <form name="signup_form" autocomplete="on" novalidate>
             <label for="email"></label><br />
             <input
               type="email"
               id="email"
               name="email"
+              class="form-input form-input-large"
               placeholder="Write your email"
               required
             /><br />
@@ -159,6 +161,7 @@
               type="text"
               id="country"
               name="country"
+              class="form-input"
               placeholder="Your Country"
               required
             /><br />
@@ -168,6 +171,7 @@
               type="text"
               id="city"
               name="city"
+              class="form-input"
               placeholder="Your City"
               required
             /><br />
@@ -177,11 +181,13 @@
               type="text"
               id="adress"
               name="adress"
-              placeholder="Your Adress"
+              class="form-input"
+              placeholder="Your Address"
               required
             /><br />
-            <button type="submit">Order my Nike</button>
+            <button class="order-button" type="submit">Order my Nike</button>
           </form>
+        </div>
         </section>
       </main>
       <footer class="footer">

@@ -125,12 +125,13 @@
   height: 67px;
   font-family: var(--main-font);
   font-weight: 400;
+  font-size: 24px;
   margin: 41px 0 0 165px;
   }
 
   .hero-button:hover {
   background-color: #62789c;
-  transition: 0.3s;
+  transition: 1s;
   }
 
 
@@ -165,13 +166,81 @@
   font-size: 36px;
   line-height: 1.4;
   }
-
   
   .reviews {
   background: linear-gradient(135deg, #021635 35%, #02304E 65%, #01516F 80%, #01AECA 100%);
   height: 520px;
   width: 1440px;
+  border-bottom: 1px solid #fff;
   }
+  
+  .reviews h2 {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  color: var(--main-text-color);
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 24px;
+  }
+  
+  .review-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 255px);
+  column-gap: 93px;
+  justify-content: center;
+  }
+  
+  .review-card {
+  padding: 49px 14px 131px 14px;
+  height: 292px;
+  width: 255px;
+  border-radius: 15px;
+  }
+  
+  .review-card:first-child {
+  background: linear-gradient(135deg, #00E5E6 7%, #00A8F7 26%, #9A76F9 63%, #CC5EC2 100%);
+  box-shadow: 0 14px 0 -5px #7B54B2, 0 30px 0 -13px #533978;
+  }
+
+  .review-card:nth-child(2) {
+  background: linear-gradient(135deg, #FF68B4 0%, #FF45E1 26%, #CE3AFF 63%, #8961FF 100%);
+   box-shadow: 0 14px 0 -5px #9159B1, 0 30px 0 -13px #61337C;
+  }
+  
+  .review-card:nth-child(3) {
+  background: linear-gradient(135deg, #FFE128 0%, #FF9B5C 30%, #FF8381 63%, #FF5489 100%);
+  box-shadow: 0 14px 0 -5px #B95A4C, 0 30px 0 -13px #732F26;
+  }
+
+  .review-text {
+  font-family: var(--main-font);
+  font-weight: 300;
+  color: var(--main-text-color);
+  font-size: 24px;
+  }
+  
+  .date {
+  font-family: var(--main-font);
+  font-weight: 400;
+  color: #D8D8D8;
+  font-size: 14px;
+  }
+
+  .name {
+  font-family: var(--main-font);
+  font-weight: 400;
+  color: var(--main-text-color);
+  font-size: 14px;
+  }
+  
+  .description {
+  font-family: var(--main-font);
+  font-weight: 400;
+  color: #D8D8D8;
+  font-size: 12px;
+  }  
+
 
   .order {
   background-image: url("../images/order/order_1.jpg");
@@ -180,7 +249,67 @@
   background-size: cover;
   height: 509px;
   width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   }
+
+  .order-container {
+  grid-template-rows: 60px repeat(3, 50px);
+  gap: 19px;
+  }
+  
+  .order h2 {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  color: var(--main-text-color);
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  padding: 21px 33px;
+  }
+  
+  .form-input {
+  height: 50px;
+  width: 580px;
+  padding: 11px 24px;
+  border-radius: 50px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 24px;
+  }
+
+  .form-input-large {
+  height: 60px;
+  width: 690px;
+  font-size: 28px;
+  }
+  
+  .form-input:focus,
+  .form-input-large:focus {
+  border-color: #3f7dac;
+  outline: none;
+  box-shadow: 0 0 5px #020b25;
+  }
+  
+  .order-button {
+  color: var(--main-text-color);
+  background-color: var(--hero-button-color);
+  border-radius: 16px;
+  width: 248px;
+  height: 68px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 24px;
+  margin: 19px 37px;
+  }
+  
+  .order-button:hover {
+  background-color: #024a70;
+  transition: 1s;
+  }
+  
 
   .footer {
   background-color: var(--main-color);
