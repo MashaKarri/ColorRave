@@ -315,4 +315,65 @@
   background-color: var(--main-color);
   height: 316px;
   width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 164px;
+  color: white;
+  }
+
+  .left-information,
+  .right-information {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .left-information {
+  align-items: flex-start;
+  }
+
+  .right-information {
+  align-items: flex-end;
+  text-align: right;
+  }
+
+  .left-text,
+  .left-text-bottom,
+  .right-link {
+  font-family: var(--main-font);
+  font-weight: 300;
+  color: white;
+  }
+
+  .left-text {
+  font-size: 24px;
+  line-height: 1.5;
+  }
+
+  .left-bottom {
+  padding-top: 72px;
+  }
+
+  .left-text-bottom {
+  font-size: 18px;
+  line-height: 1.5;
+  }
+
+  .right-link {
+  font-size: 24px;
+  line-height: 1.5;
+  }
+  
+  .right-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 19px;
+  }
+
+  .right-text {
+  font-family: var(--tertiary-font);
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1;
   }
