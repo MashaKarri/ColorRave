@@ -1,6 +1,6 @@
   :root {
-  --main-color: #021635; /*advantages, review, footer background color*/
-  --main-text-color: #FFFFFF; /*main text color, header hover*/
+  --main-color: #021635;
+  --main-text-color: #FFFFFF;
   --header-background-color: #012D63;
   --header-nav-color: #C7C7C7;
   --hero-button-color: #8E32C6;
@@ -166,6 +166,7 @@
   font-size: 36px;
   line-height: 1.4;
   }
+
   
   .reviews {
   background: linear-gradient(135deg, #021635 35%, #02304E 65%, #01516F 80%, #01AECA 100%);
@@ -225,8 +226,18 @@
   font-weight: 400;
   color: #D8D8D8;
   font-size: 14px;
+  margin-top: 8px;
   }
 
+  .review-footer {
+  margin-top: 47px;
+  }
+
+  .review-img {
+  float: left;
+  margin-right: 5px;
+  }
+  
   .name {
   font-family: var(--main-font);
   font-weight: 400;
@@ -279,15 +290,10 @@
   font-weight: 400;
   font-size: 24px;
   }
-
-  .form-input-large {
-  height: 60px;
-  width: 690px;
-  font-size: 28px;
-  }
   
-  .form-input:focus,
-  .form-input-large:focus {
+  .form-input:focus {
+  width: 690px;
+  height: 60px;
   border-color: #3f7dac;
   outline: none;
   box-shadow: 0 0 5px #020b25;
