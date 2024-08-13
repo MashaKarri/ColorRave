@@ -198,7 +198,16 @@
   width: 255px;
   border-radius: 15px;
   }
-  
+
+  .review-card:hover {
+  height: 330px;
+  }
+
+  .review-card:hover .review-text {
+  white-space: normal;
+  overflow: visible;
+  }
+
   .review-card:first-child {
   background: linear-gradient(135deg, #00E5E6 7%, #00A8F7 26%, #9A76F9 63%, #CC5EC2 100%);
   box-shadow: 0 14px 0 -5px #7B54B2, 0 30px 0 -13px #533978;
@@ -219,6 +228,9 @@
   font-weight: 300;
   color: var(--main-text-color);
   font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   }
   
   .date {
@@ -267,7 +279,7 @@
   }
 
   .order-container {
-  grid-template-rows: 60px repeat(3, 50px);
+  grid-template-rows: repeat(4, 50px);
   gap: 19px;
   }
   
