@@ -158,6 +158,17 @@
   .advantages-item {
   text-align: center;
   color: var(--main-text-color);
+  position: relative;
+  }
+  
+  .advantages-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -72px;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
   }
   
   .advantages-item h3 {
@@ -166,13 +177,17 @@
   font-size: 36px;
   line-height: 1.4;
   }
-
+  
   
   .reviews {
-  background: linear-gradient(135deg, #021635 35%, #02304E 65%, #01516F 80%, #01AECA 100%);
   height: 520px;
   width: 1440px;
   border-bottom: 1px solid #fff;
+  background-image: 
+  url("../images/reviews/reviews_1.jpg"),
+  linear-gradient(135deg, #021635 35%, #02304E 65%, #01516F 80%, #01AECA 100%);
+  background-position: left bottom;
+  background-repeat: no-repeat;
   }
   
   .reviews h2 {
